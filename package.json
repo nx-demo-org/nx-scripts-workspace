@@ -1,10 +1,19 @@
 {
-  "name": "@nx-scripts/source",
+  "name": "@nx-demo-org/nx-scripts",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "foobar": "echo \"This is testing npm scripts with Nx\""
+  },
   "private": true,
   "dependencies": {},
+  "nx": {
+    "targets": {
+      "foobar": {
+        "cache": true
+      }
+    }
+  },
   "devDependencies": {
     "@nx/js": "21.3.9",
     "@swc-node/register": "~1.9.1",

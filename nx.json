@@ -5,7 +5,6 @@
     "production": ["default"],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "nxCloudId": "688909813ff349586f520290",
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
