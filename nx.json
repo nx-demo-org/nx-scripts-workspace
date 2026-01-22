@@ -1,15 +1,24 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": ["default"],
-    "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
+    "production": [
+      "default"
+    ],
+    "sharedGlobals": [
+      "{workspaceRoot}/.github/workflows/ci.yml"
+    ]
   },
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
       "options": {
-        "typecheck": { "targetName": "typecheck" },
+        "typecheck": {
+          "targetName": "typecheck"
+        },
         "build": {
           "targetName": "build",
           "configName": "tsconfig.lib.json",
@@ -19,6 +28,5 @@
       }
     }
   ],
-  "nxCloudId": "68890ff1343759e02e548900",
-  "nxCloudUrl": "https://staging.nx.app"
+  "nxCloudId": "697271759923624141059391"
 }
